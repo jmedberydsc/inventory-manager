@@ -1,0 +1,50 @@
+{{ define "New" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+   <h2>New Weapon</h2>  
+    <form method="POST" action="insert">
+      <table border="1" cellpadding="5">
+      <thead>
+      <tr>
+        <td><label> Name </label></td>
+        <td><label> Type </label></td>
+        <td><label> Description </label></td>
+        <td><label> Puncture </label></td>
+        <td><label> Slice </label></td>
+        <td><label> Impact </label></td>
+      </tr>
+       </thead>
+       <tbody>
+      <tr>
+       <td><input type="text" name="name" /><br/></td>
+       <td><input type="text" name="wtype" /><br/></td>
+       <td><input type="text" name="description" /><br/></td>
+       <td><input type="text" name="puncture" /><br/></td>
+       <td><input type="text" name="slice" /><br/></td>
+       <td><input type="text" name="impact" /><br/></td>    
+    </table>
+    <br></br>
+    <table border="1" cellpadding="5">
+      <thead>
+      <tr>
+        <td><label> Foi </label></td>
+        <td><label> Balance </label></td>
+        <td><label> Suitedness </label></td>
+        <td><label> Construction </label></td>
+        <td><label> Weight </label></td>
+        <td><label> Cost </label></td>
+      </tr>
+      <tr>
+       <td><input type="text" name="foi" /><br/></td>
+       <td><input type="text" name="balance" /><br/></td>
+       <td><input type="text" name="suitedness" /><br/></td>
+       <td><input type="text" name="construction" /><br/></td>
+       <td><input type="text" name="weight" /><br/></td>
+       <td><input type="text" name="cost" /><br/></td>
+      </tr>
+      </thead>
+      </table>
+      <input type="submit" value="Save Weapon" />   
+    </form>
+  {{ template "Footer" }}
+{{ end }}

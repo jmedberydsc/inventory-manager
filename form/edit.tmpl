@@ -1,0 +1,22 @@
+{{ define "Edit" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+   <h2>Edit Weapon</h2>  
+    <form method="POST" action="update">
+      <input type="hidden" name="uid" value="{{ .Id }}" />
+      <label> Name </label><input type="text" name="name" value="{{ .Name }}"  /><br />
+      <label> WeaponType </label><input type="text" name="wtype" value="{{ .WeaponType }}"  /><br />
+      <label> Description </label><input type="text" name="description" value="{{ .Description }}"  /><br />
+      <label> Puncture </label><input type="text" name="puncture" value="{{ .Puncture }}"  /><br />
+      <label> Slice </label><input type="text" name="slice" value="{{ .Slice }}"  /><br />
+      <label> Impact </label><input type="text" name="impact" value="{{ .Impact }}"  /><br />
+      <label> Foi </label><input type="text" name="foi" value="{{ .Foi }}"  /><br />
+      <label> Balance </label><input type="text" name="balance" value="{{ .Balance }}"  /><br />
+      <label> Suitedness </label><input type="text" name="suitedness" value="{{ .Suitedness }}"  /><br />
+      <label> Construction </label><input type="text" name="construction" value="{{ .Construction }}"  /><br />
+      <label> Weight </label><input type="text" name="weight" value="{{ .Weight }}"  /><br />
+      <label> Cost </label><input type="text" name="cost" value="{{ .Cost }}"  /><br />
+      <input type="submit" value="Save Weapon" />
+    </form><br />    
+  {{ template "Footer" }}
+{{ end }}

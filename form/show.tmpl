@@ -1,0 +1,18 @@
+{{ define "Show" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h2> Register {{ .Id }} </h2>
+      <p>Name: {{ .Name }}</p>
+      <p>Wtype:  {{ .WeaponType }}</p>
+      <p>Description:  {{ .Description }}</p>
+      <p>Puncture:  {{ .Puncture }}</p>
+      <p>Slice:  {{ .Slice }}</p>
+      <p>Impact:  {{ .Impact }}</p>
+      <p>Foi:  {{ .Foi }}</p>
+      <p>Balance:  {{ .Balance }}</p>
+      <p>Suitedness:  {{ .Suitedness }}</p>
+      <p>Construction:  {{ .Construction }}
+      <p>Weight:  {{ .Weight }}</p>
+      <p>Cost:  {{ .Cost }}</p><br /> <a href="/edit?id={{ .Id }}">Edit</a></p>
+  {{ template "Footer" }}
+{{ end }}
